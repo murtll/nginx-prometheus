@@ -16,7 +16,6 @@ RUN apk add --no-cache gzip \
                        pcre \
                        zlib \
                        openssl \
-                       libxslt \
                        curl \
                        libaio \
                        libgcc && \
@@ -30,7 +29,6 @@ RUN apk add --no-cache gzip \
                       zlib-dev \
                       make \
                       openssl-dev \
-                      libxslt-dev \
                       libaio-dev && \
 #  create nginx user and group
     addgroup -g 101 -S nginx && \
